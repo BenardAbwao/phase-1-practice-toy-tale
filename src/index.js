@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-toy-btn");
   const toyFormContainer = document.querySelector(".container");
   addBtn.addEventListener("click", () => {
-    // hide & seek with the form
     addToy = !addToy;
     if (addToy) {
       toyFormContainer.style.display = "block";
@@ -24,8 +23,6 @@ function addItem(toPost){
 
 
 let myForm = document.querySelector('form')
-  
-
 myForm.addEventListener('submit', (e)=> {
   e.preventDefault()
   let names = document.getElementById('name')
@@ -49,8 +46,6 @@ myForm.addEventListener('submit', (e)=> {
   }
   addItem(toPost)
 })
-
-// display Elements
 
 let toyColl = document.getElementById('toy-collection')
 
@@ -83,9 +78,6 @@ function displayItem(dataset){
       updateLike(data)
     })
   });
-  
-
-
 }
 
 function updateLike(data){
